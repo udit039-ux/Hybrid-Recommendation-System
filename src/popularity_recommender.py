@@ -76,6 +76,9 @@ def recommend_popular(movies, ratings, top_n=10):
 if __name__ == "__main__":
     movies, ratings = load_data()
 
+
+    
+
     recommendations = recommend_popular(
         movies,
         ratings,
@@ -87,3 +90,5 @@ if __name__ == "__main__":
     print(recommendations.to_string(index=False))
 
     print("\nOverall average rating:", round(ratings["rating"].mean(), 3))
+
+
